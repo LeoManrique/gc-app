@@ -1,0 +1,75 @@
+<div class="container px-2">
+    <div class="my-1">Categorías</div>
+    
+    <form class="my-1">
+        <mat-form-field class="cat-buscador ml-1 px-1">
+            <input matInput type="search" placeholder="Buscar..." value="">
+        </mat-form-field>
+    </form>
+
+    <div class="categorias">
+        <mat-accordion>
+            <mat-expansion-panel class="categoria my-1">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Experiencia
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+            
+                <mat-checkbox>Practicante</mat-checkbox>
+                <mat-checkbox checked="true">Junior</mat-checkbox>
+                <mat-checkbox>Associate</mat-checkbox>
+                <mat-checkbox>Semi-senior</mat-checkbox>
+                <mat-checkbox>Senior</mat-checkbox>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion>
+            <mat-expansion-panel class="categoria my-1">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Tipo Proyecto
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+            
+                <mat-checkbox>Implementación</mat-checkbox>
+                <mat-checkbox checked="true">Desarrollo</mat-checkbox>
+                <mat-checkbox>Integraciones</mat-checkbox>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion>
+            <mat-expansion-panel class="categoria my-1">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Tipo Cliente
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+            
+                <mat-selection-list #shoes>
+                    <mat-checkbox>Interno</mat-checkbox>
+                    <mat-checkbox>Directo</mat-checkbox>
+                    <mat-checkbox>Indirecto</mat-checkbox>
+                </mat-selection-list>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion>
+            <mat-expansion-panel class="categoria my-1">
+                <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Lenguaje
+                </mat-panel-title>
+                </mat-expansion-panel-header>
+            
+                <mat-selection-list #shoes>
+                    <mat-checkbox checked="true">Java</mat-checkbox>
+                    <mat-checkbox>C#</mat-checkbox>
+                    <mat-checkbox checked="true">SQL</mat-checkbox>
+                </mat-selection-list>
+                      
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

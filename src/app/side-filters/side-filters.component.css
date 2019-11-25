@@ -1,0 +1,36 @@
+.categoria {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.cat-buscador {
+    margin: 0 auto;
+    width: 10em !important;
+}
+
+.mat-expansion-panel-header {
+    padding: 0 1em !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 1em 1em !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content-reverse,
+.mat-list-base .mat-list-option .mat-list-item-content-reverse {
+    padding: 0 0 !important;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.mat-list-item-content .mat-list-item-content-reverse {
+    padding: 0 !important;
+}
+
+.mat-checkbox {
+    display: block;
+}

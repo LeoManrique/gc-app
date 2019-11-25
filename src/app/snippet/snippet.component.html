@@ -1,0 +1,50 @@
+<mat-card class="m-3">
+    <mat-toolbar class="my-2">  
+        <mat-toolbar-row>
+            <input matInput placeholder="Nombre" readonly="true"
+            value = "Obtener definición de objetos de base de datos">
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+<textarea class="my-2" matInput readonly="true" placeholder="Descripción">
+    Permite obtener la definición de un objecto de de BD con SQL sin necesidad de Entornos de Desarrollo
+</textarea>
+
+
+<article class="file-holder snippet-file-content">
+    <div class="well well-lg card card-block card-header">
+        <div class="blob-viewer" data-type="simple" data-url="/snippets/46.json?viewer=simple" data-loading="true" data-loaded="true">
+            <div class="blob-viewer" data-type="simple">
+                <div class="file-content code js-syntax-highlight dark">
+                    <div class="blob-content" data-blob-id="46">
+                        <pre class="code highlight">
+                            <code>
+                                <span id="LC2" class="line" lang="sql"><span class="k">select</span> <span class="n">dbms_metadata</span><span class="p">.</span><span class="n">get_ddl</span><span class="p">(</span><span class="s1">'TABLE'</span><span class="p">,</span><span class="s1">'MTL_SERIAL_NUMBERS_INTERFACE'</span><span class="p">,</span><span class="s1">'INV'</span><span class="p">)</span> <span class="k">from</span> <span class="n">dual</span><span class="p">;</span></span>
+                                <span id="LC3" class="line" lang="sql"></span>
+                                <span id="LC4" class="line" lang="sql"><span class="c1">-- Para obtener la definicion de los objetos dependientes de un objeto de base de datos.</span></span>
+                                <span id="LC5" class="line" lang="sql"><span class="k">SELECT</span> <span class="n">DBMS_METADATA</span><span class="p">.</span><span class="n">GET_DEPENDENT_DDL</span><span class="p">(</span><span class="s1">'INDEX'</span><span class="p">,</span><span class="k">UPPER</span><span class="p">(</span><span class="s1">'MTL_SERIAL_NUMBERS_INTERFACE'</span><span class="p">),</span><span class="k">UPPER</span><span class="p">(</span><span class="s1">'INV'</span><span class="p">))</span> <span class="k">from</span> <span class="n">dual</span><span class="p">;</span></span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<mat-chip-list #chipList aria-label="Fruit selection">
+        <mat-chip class="mt-3" style="background-color: #ef9a9a">SQL
+            <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <mat-chip class="mt-3" style="background-color: #c5cae9">DDL
+            <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+    </mat-chip-list>
+
+<mat-card-footer class="px-3 mt-3 text-left">
+    <span><strong>Creado por: </strong>Leonardo Manrique</span>
+</mat-card-footer>
+<mat-card-footer class="px-2 text-right">
+    <a href="#"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon></a>
+</mat-card-footer>
+</mat-card>

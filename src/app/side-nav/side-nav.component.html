@@ -1,0 +1,23 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+    <mat-sidenav mode="side" opened class="side-options">
+        <app-side-options></app-side-options>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-sidenav-container class="sidenav-container" autosize>
+            <mat-sidenav mode="side" opened class="side-filters">
+                <app-side-filters></app-side-filters>
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <mat-sidenav-container class="sidenav-container" autosize>
+                    <mat-sidenav mode="side" opened class="side-snippets">
+                        <app-side-snippets></app-side-snippets>
+                    </mat-sidenav>
+                    <mat-sidenav-content>
+                        <app-snippet></app-snippet>
+                    </mat-sidenav-content>
+                </mat-sidenav-container>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

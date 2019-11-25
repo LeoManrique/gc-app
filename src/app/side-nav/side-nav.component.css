@@ -1,0 +1,30 @@
+.sidenav-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+
+  .side-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+  }
+
+  .side-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5em;
+  }
+
+  .side-snippets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+  }
+  
